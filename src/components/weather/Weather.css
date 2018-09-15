@@ -1,0 +1,41 @@
+.weather {
+    display: grid;
+    width: 300px;
+    background: #f38181;
+    height: 420px;
+    color: white;
+    margin: 100px auto;
+    border-radius: 50px;
+}
+
+#submit-box {
+    background: #f38181;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    width: 100px;
+    height: 20px;
+    margin: 0 auto;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#submit-box:hover {
+    background: white;
+    border: 2px solid #f38181;
+    color: #f38181;
+    font-weight: bold;
+}
+
+#input-area {
+    width: 100px;
+    background: #eaffd0;
+    border: none;
+    text-align: center;
+    border-radius: 50px;
+    color: black;
+    font-weight: bold;
+}
+form {
+    display: grid;
+}

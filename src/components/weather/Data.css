@@ -1,0 +1,32 @@
+.icon {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.icon img {
+    width: 100% ;
+}
+
+.weather-container {
+    font-weight: bold;
+    height: 200px;
+    padding-bottom: 125px;
+}
+
+#celsius,#fahrenheit {
+    display: grid;
+    margin: 0 auto;
+    width: 80px;
+    cursor: pointer;
+    color: black;
+    background: #fce38a;
+    border-radius: 50px;
+}
+#fahrenheit {
+    display: none;
+}
+
+#celsius:hover,#fahrenheit:hover {
+    background: white;
+}
