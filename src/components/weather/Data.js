@@ -87,7 +87,7 @@ class Datas extends Component {
             images = rain
         } else if (this.state.zipData.weather[0].icon === "11d"||this.state.zipData.weather[0].icon === "11n"){
             images = thunderstorm
-        } else if (this.state.zipData.weather[0].icon === "13d" || this.stat.ezipData.weather[0].icon === "13n"){
+        } else if (this.state.zipData.weather[0].icon === "13d" || this.state.zipData.weather[0].icon === "13n"){
             images = snow
         } else if (this.state.zipData.weather[0].icon === "50d"){
             images = dayline
