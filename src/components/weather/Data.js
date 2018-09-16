@@ -43,55 +43,57 @@ class Datas extends Component {
   
     render () {
         let image;
-        if (this.props.icon === "01d"){
+        let geoWeather = this.props.icon;
+        if (geoWeather === "01d"){
             image = sunny
-        } else if (this.props.icon === "01n"){
+        } else if (geoWeather === "01n"){
             image = clearnight
-        } else if (this.props.icon === "02d"){
+        } else if (geoWeather === "02d"){
             image = fewcloudday
-        } else if (this.props.icon === "02n"){
+        } else if (geoWeather === "02n"){
             image = fewcloudnight
-        } else if (this.props.icon === "03d" || this.props.icon === "03n"){
+        } else if (geoWeather === "03d" || geoWeather === "03n"){
             image = scatteredclouds
-        } else if (this.props.icon === "04d"|| this.props.icon === "04n"){
+        } else if (geoWeather === "04d"|| geoWeather === "04n"){
             image = brokenclouds
-        } else if (this.props.icon === "09d" || this.props.icon === "09n"  || this.props.icon === "10d" || this.props.icon === "10n"){
+        } else if (geoWeather === "09d" || geoWeather === "09n"  || geoWeather === "10d" || geoWeather === "10n"){
             image = rain
-        } else if (this.props.icon === "11d"||this.props.icon === "11n"){
+        } else if (geoWeather === "11d"||geoWeather === "11n"){
             image = thunderstorm
-        } else if (this.props.icon === "13d" || this.props.icon === "13n"){
+        } else if (geoWeather === "13d" || geoWeather === "13n"){
             image = snow
-        } else if (this.props.icon === "50d"){
+        } else if (geoWeather === "50d"){
             image = dayline
-        } else if (this.props.icon === "50n") {
+        } else if (geoWeather === "50n") {
             image = nightline
         }
 
         
 
         if (this.state.zipData) {
+            let zipWeather = this.state.zipData.weather[0].icon
             let images;
-        if (this.state.zipData.weather[0].icon === "01d"){
+        if (zipWeather === "01d"){
             images = sunny
-        } else if (this.state.zipData.weather[0].icon === "01n"){
+        } else if (zipWeather === "01n"){
             images = clearnight
-        } else if (this.state.zipData.weather[0].icon === "02d"){
+        } else if (zipWeather === "02d"){
             images = fewcloudday
-        } else if (this.state.zipData.weather[0].icon === "02n"){
+        } else if (zipWeather === "02n"){
             images = fewcloudnight
-        } else if (this.state.zipData.weather[0].icon === "03d" || this.state.zipData.weather[0].icon === "03n"){
+        } else if (zipWeather === "03d" || zipWeather === "03n"){
             images = scatteredclouds
-        } else if (this.state.zipData.weather[0].icon === "04d"|| this.state.zipData.weather[0].icon === "04n"){
+        } else if (zipWeather === "04d"|| zipWeather === "04n"){
             images = brokenclouds
-        } else if (this.state.zipData.weather[0].icon === "09d" || this.state.zipData.weather[0].icon === "09n"  || this.state.zipData.weather[0].icon === "10d" || this.state.zipData.weather[0].icon === "10n"){
+        } else if (zipWeather === "09d" || zipWeather === "09n"  || zipWeather === "10d" || zipWeather === "10n"){
             images = rain
-        } else if (this.state.zipData.weather[0].icon === "11d"||this.state.zipData.weather[0].icon === "11n"){
+        } else if (zipWeather === "11d"||zipWeather === "11n"){
             images = thunderstorm
-        } else if (this.state.zipData.weather[0].icon === "13d" || this.state.zipData.weather[0].icon === "13n"){
+        } else if (zipWeather === "13d" || zipWeather === "13n"){
             images = snow
-        } else if (this.state.zipData.weather[0].icon === "50d"){
+        } else if (zipWeather === "50d"){
             images = dayline
-        } else if (this.state.zipData.weather[0].icon === "50n") {
+        } else if (zipWeather === "50n") {
             images = nightline
         }
             return (

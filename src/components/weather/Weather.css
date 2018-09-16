@@ -2,7 +2,7 @@
     display: grid;
     width: 300px;
     background: #f38181;
-    height: 420px;
+    height: auto;
     color: white;
     margin: 100px auto;
     border-radius: 50px;
@@ -35,7 +35,9 @@
     border-radius: 50px;
     color: black;
     font-weight: bold;
+    margin: 10px;
 }
 form {
     display: grid;
+    padding-bottom: 25px;
 }
